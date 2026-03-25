@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Hilltop Ventures | Boutique Property Management in Washington DC & Little Rock AR</title>
+  <meta name="description" content="Learn about Hilltop Ventures — a boutique short-term rental company managing properties in Washington DC and Little Rock AR with a 4.9-star guest rating.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.staywithhilltop.com/about.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --cream: #FAF8F5; --taupe: #E8E4DC; --gold: #B8962E; --charcoal: #2C2C2A; --black: #1A1A18; --muted: #666; --light-muted: #aaa; }
+    body { font-family: 'Jost', sans-serif; background: var(--cream); color: var(--charcoal); }
+    a { text-decoration: none; color: inherit; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,248,245,0.96); backdrop-filter: blur(8px); border-bottom: 0.5px solid var(--taupe); padding: 0 40px; display: flex; justify-content: space-between; align-items: center; height: 64px; }
+    .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a { font-size: 13px; color: var(--muted); }
+    .nav-links a:hover { color: var(--charcoal); }
+    .nav-btn { background: var(--gold); color: #fff !important; padding: 10px 20px; }
+
+    .page-hero { padding: 140px 40px 80px; text-align: center; max-width: 680px; margin: 0 auto; }
+    .page-eyebrow { font-size: 11px; letter-spacing: 0.14em; color: var(--gold); text-transform: uppercase; margin-bottom: 10px; }
+    .page-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 5vw, 52px); font-weight: 500; color: var(--charcoal); margin-bottom: 20px; line-height: 1.2; }
+    .page-sub { font-size: 15px; color: var(--muted); line-height: 1.8; }
+
+    .hero-photo { width: 100%; height: 520px; overflow: hidden; }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 60%; }
+    .hero-photo-placeholder { width: 100%; height: 520px; background: var(--taupe); display: flex; align-items: center; justify-content: center; font-size: 13px; letter-spacing: 0.08em; color: var(--light-muted); }
+
+    .mission-section { padding: 80px 40px; max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .mission-eyebrow { font-size: 11px; letter-spacing: 0.14em; color: var(--gold); text-transform: uppercase; margin-bottom: 10px; }
+    .mission-title { font-family: 'Cormorant Garamond', serif; font-size: 32px; color: var(--charcoal); line-height: 1.3; margin-bottom: 20px; }
+    .mission-text { font-size: 14px; color: var(--muted); line-height: 1.8; margin-bottom: 16px; }
+    .mission-photo { border-radius: 6px; overflow: hidden; height: 320px; background: var(--taupe); display: flex; align-items: center; justify-content: center; }
+    .mission-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+    .stats-bar { background: var(--charcoal); padding: 56px 40px; }
+    .stats-inner { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 32px; max-width: 900px; margin: 0 auto; text-align: center; }
+    .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 48px; color: var(--gold); }
+    .stat-label { font-size: 12px; letter-spacing: 0.1em; color: var(--light-muted); margin-top: 6px; text-transform: uppercase; }
+
+    .values-section { padding: 80px 40px; }
+    .values-inner { max-width: 900px; margin: 0 auto; }
+    .section-eyebrow { font-size: 11px; letter-spacing: 0.14em; color: var(--gold); text-transform: uppercase; margin-bottom: 10px; text-align: center; }
+    .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 4vw, 40px); font-weight: 500; color: var(--charcoal); text-align: center; margin-bottom: 48px; }
+    .values-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .value-item { text-align: center; padding: 24px 16px; }
+    .value-icon { font-size: 28px; margin-bottom: 12px; }
+    .value-title { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--charcoal); margin-bottom: 8px; }
+    .value-desc { font-size: 13px; color: var(--muted); line-height: 1.7; }
+
+    .bottom-cta { background: var(--taupe); padding: 80px 40px; text-align: center; }
+    .cta-title { font-family: 'Cormorant Garamond', serif; font-size: 36px; color: var(--charcoal); margin-bottom: 12px; }
+    .cta-sub { font-size: 14px; color: var(--muted); margin-bottom: 32px; line-height: 1.7; }
+    .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-dark { display: inline-block; background: var(--charcoal); color: #fff; font-size: 13px; letter-spacing: 0.08em; padding: 14px 32px; }
+    .btn-gold { display: inline-block; background: var(--gold); color: #fff; font-size: 13px; letter-spacing: 0.08em; padding: 14px 32px; }
+
+    footer { background: var(--charcoal); padding: 48px 40px 32px; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; padding-bottom: 32px; border-bottom: 0.5px solid rgba(255,255,255,0.1); margin-bottom: 24px; }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: #fff; }
+    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-links a { font-size: 13px; color: var(--light-muted); }
+    .footer-bottom { font-size: 12px; color: var(--light-muted); text-align: center; }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      .page-hero { padding: 100px 24px 60px; }
+      .hero-photo { height: 320px; }
+      .mission-section { grid-template-columns: 1fr; gap: 32px; padding: 60px 24px; }
+      .values-section { padding: 60px 24px; }
+      .values-grid { grid-template-columns: repeat(2, 1fr); }
+      .bottom-cta { padding: 60px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">Hilltop Ventures</a>
+    <div class="nav-links">
+      <a href="our-properties.html">Our Properties</a>
+      <a href="manage-with-us.html">Manage With Us</a>
+      <a href="about.html">About</a>
+      <a href="https://dashboard.hostaway.com" target="_blank">Owner Login</a>
+      <a href="contact.html" class="nav-btn">Contact Us</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <p class="page-eyebrow">Our Story</p>
+    <h1 class="page-title">Built on the belief that every home deserves to be treated with care.</h1>
+    <p class="page-sub">Hilltop Ventures started as a single property and grew into a boutique management company because we refused to cut corners. Every decision we make comes back to one question — would we be proud to stay here ourselves?</p>
+  </div>
+
+  <!-- HERO PHOTO — replace src with your actual Squarespace asset URL or relative path -->
+  <div class="hero-photo">
+    <img src="images/about-hero.jpg" alt="Hilltop Ventures founders" onerror="this.parentElement.innerHTML='<div class=\'hero-photo-placeholder\'>Add your photo here</div>'">
+  </div>
+
+  <div class="mission-section">
+    <div>
+      <p class="mission-eyebrow">What Drives Us</p>
+      <h2 class="mission-title">We manage properties the way we'd want our own managed.</h2>
+      <p class="mission-text">That means honest communication, proactive care, and never letting a property slip below the standard our guests expect. It also means our homeowner clients always know what's happening — no surprises, no excuses.</p>
+      <p class="mission-text">We're based in the markets we serve. We know Washington, DC and Little Rock — the neighborhoods, the demand patterns, the guests. That local knowledge makes a real difference in how we price, market, and operate.</p>
+    </div>
+    <div class="mission-photo">
+      <img src="images/about-interior.jpg" alt="Hilltop Ventures property interior" onerror="this.style.display='none'">
+    </div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div><div class="stat-num">11</div><div class="stat-label">Active Properties</div></div>
+      <div><div class="stat-num">★ 4.9</div><div class="stat-label">Average Guest Rating</div></div>
+      <div><div class="stat-num">2</div><div class="stat-label">Markets Managed</div></div>
+      <div><div class="stat-num">24/7</div><div class="stat-label">Guest Support</div></div>
+    </div>
+  </div>
+
+  <div class="values-section">
+    <div class="values-inner">
+      <p class="section-eyebrow">How We Operate</p>
+      <h2 class="section-title">Our principles.</h2>
+      <div class="values-grid">
+        <div class="value-item">
+          <div class="value-icon">🏡</div>
+          <div class="value-title">Treat it like home</div>
+          <div class="value-desc">Every property is maintained to the standard we'd hold our own home. No shortcuts.</div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">🤝</div>
+          <div class="value-title">Be honest always</div>
+          <div class="value-desc">With guests, with owners, and with ourselves. Transparency builds trust — and trust builds long relationships.</div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">📈</div>
+          <div class="value-title">Optimize relentlessly</div>
+          <div class="value-desc">Pricing, listings, guest experience — we're always looking for ways to improve performance for every property.</div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">💬</div>
+          <div class="value-title">Respond fast</div>
+          <div class="value-desc">Guests and owners shouldn't have to wait. Fast, clear communication is non-negotiable at Hilltop.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-cta">
+    <h2 class="cta-title">Ready to work together?</h2>
+    <p class="cta-sub">Whether you're looking for a place to stay or a team to trust with your property — we'd love to connect.</p>
+    <div class="cta-btns">
+      <a href="our-properties.html" class="btn-dark">BROWSE PROPERTIES →</a>
+      <a href="manage-with-us.html" class="btn-gold">MANAGE WITH US →</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Hilltop Ventures</div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="our-properties.html">Our Properties</a>
+        <a href="manage-with-us.html">Manage With Us</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2026 Hilltop Ventures · Washington, DC & Little Rock, AR</p>
+  </footer>
+
+</body>
+</html>
