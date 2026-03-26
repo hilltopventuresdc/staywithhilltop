@@ -102,19 +102,26 @@
   <div class="widget-section">
     <p class="widget-title">Search & Book Direct</p>
     <p class="widget-sub">Enter your dates to see available properties with real-time pricing</p>
-<div id="hostaway-booking-widget" style="min-height: 80px; width: 100%;"></div>
-<script src="https://d2q3n06xhbi0am.cloudfront.net/widget.js?1640277196"></script>
+<div id="hostaway-booking-widget" style="min-height: 100px; width: 100%;"></div>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    window.searchBar({
-      baseUrl: 'hilltoptest.holidayfuture.com',
-      showLocation: true,
-      color: '#B8962E',
-      rounded: true,
-      openInNewTab: false,
-      font: 'Jost',
-    });
-  });
+  function loadHostawayWidget() {
+    if (typeof window.searchBar === 'function') {
+      window.searchBar({
+        baseUrl: 'hilltoptest.holidayfuture.com',
+        showLocation: true,
+        color: '#B8962E',
+        rounded: true,
+        openInNewTab: false,
+        font: 'Jost',
+      });
+    } else {
+      setTimeout(loadHostawayWidget, 100);
+    }
+  }
+</script>
+<script 
+  src="https://d2q3n06xhbi0am.cloudfront.net/widget.js?1640277196" 
+  onload="loadHostawayWidget()">
 </script>
   </div>
 
