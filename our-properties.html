@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Properties | Hilltop Ventures — Vacation Rentals in Washington DC & Little Rock AR</title>
-  <meta name="description" content="Browse all 11 Hilltop Ventures vacation rental properties in Washington DC and Little Rock AR. Book direct for the best rate — no OTA fees.">
+  <meta name="description" content="Browse all Hilltop Ventures vacation rental properties in Washington DC and Little Rock AR. Search availability and book direct for the best rate — no OTA fees.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.staywithhilltop.com/our-properties.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,52 +18,60 @@
     nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,248,245,0.96); backdrop-filter: blur(8px); border-bottom: 0.5px solid var(--taupe); padding: 0 40px; display: flex; justify-content: space-between; align-items: center; height: 64px; }
     .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; }
     .nav-links { display: flex; gap: 28px; align-items: center; }
-    .nav-links a { font-size: 13px; color: var(--muted); }
+    .nav-links a { font-size: 13px; color: var(--muted); transition: color 0.2s; }
     .nav-links a:hover { color: var(--charcoal); }
     .nav-btn { background: var(--gold); color: #fff !important; padding: 10px 20px; }
-
-    .page-hero { padding: 120px 40px 60px; text-align: center; }
+    .page-hero { padding: 120px 40px 60px; text-align: center; max-width: 680px; margin: 0 auto; }
     .page-eyebrow { font-size: 11px; letter-spacing: 0.14em; color: var(--gold); text-transform: uppercase; margin-bottom: 10px; }
-    .page-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 5vw, 52px); font-weight: 500; color: var(--charcoal); margin-bottom: 16px; }
-    .page-sub { font-size: 15px; color: var(--muted); line-height: 1.8; max-width: 560px; margin: 0 auto; }
-
-    .widget-section { background: var(--charcoal); padding: 40px; }
-    .widget-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: #fff; text-align: center; margin-bottom: 24px; }
-
-    .properties-section { padding: 60px 40px; }
-    .properties-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1200px; margin: 0 auto; }
-    .prop-card { background: #fff; border: 0.5px solid var(--taupe); border-radius: 6px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
-    .prop-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
-    .prop-img { width: 100%; height: 200px; background: var(--taupe); display: flex; align-items: center; justify-content: center; }
-    .prop-img img { width: 100%; height: 100%; object-fit: cover; }
-    .prop-img-placeholder { font-size: 11px; letter-spacing: 0.08em; color: var(--light-muted); text-transform: uppercase; }
-    .prop-info { padding: 20px; }
-    .prop-name { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--charcoal); margin-bottom: 4px; }
-    .prop-loc { font-size: 11px; letter-spacing: 0.08em; color: var(--gold); text-transform: uppercase; margin-bottom: 10px; }
-    .prop-desc { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 12px; }
-    .prop-meta { font-size: 12px; color: var(--light-muted); margin-bottom: 16px; }
-    .prop-btn { display: inline-block; background: var(--charcoal); color: #fff; font-size: 12px; letter-spacing: 0.06em; padding: 10px 20px; transition: background 0.2s; }
-    .prop-btn:hover { background: var(--black); }
-
+    .page-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 5vw, 52px); font-weight: 500; color: var(--charcoal); margin-bottom: 16px; line-height: 1.2; }
+    .page-sub { font-size: 15px; color: var(--muted); line-height: 1.8; }
+    .widget-section { background: var(--charcoal); padding: 48px 40px 64px; }
+    .widget-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; color: #fff; text-align: center; margin-bottom: 8px; }
+    .widget-sub { font-size: 13px; color: var(--light-muted); text-align: center; margin-bottom: 28px; }
+    .trust-strip { background: var(--taupe); padding: 28px 40px; display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
+    .trust-item { text-align: center; }
+    .trust-num { font-family: 'Cormorant Garamond', serif; font-size: 28px; color: var(--charcoal); }
+    .trust-label { font-size: 11px; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; margin-top: 3px; }
+    .why-direct { padding: 72px 40px; max-width: 900px; margin: 0 auto; }
+    .section-eyebrow { font-size: 11px; letter-spacing: 0.14em; color: var(--gold); text-transform: uppercase; margin-bottom: 10px; text-align: center; }
+    .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(26px, 4vw, 36px); font-weight: 500; color: var(--charcoal); text-align: center; margin-bottom: 40px; }
+    .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .benefit-item { text-align: center; padding: 24px 16px; }
+    .benefit-icon { font-size: 28px; margin-bottom: 12px; }
+    .benefit-title { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--charcoal); margin-bottom: 8px; }
+    .benefit-desc { font-size: 13px; color: var(--muted); line-height: 1.7; }
+    .markets-section { background: var(--taupe); padding: 72px 40px; }
+    .markets-inner { max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    .market-card { background: var(--cream); border-radius: 6px; padding: 32px; }
+    .market-city { font-family: 'Cormorant Garamond', serif; font-size: 28px; color: var(--charcoal); margin-bottom: 4px; }
+    .market-state { font-size: 11px; letter-spacing: 0.1em; color: var(--gold); text-transform: uppercase; margin-bottom: 12px; }
+    .market-desc { font-size: 13px; color: var(--muted); line-height: 1.7; margin-bottom: 16px; }
+    .market-props { font-size: 12px; color: var(--charcoal); font-weight: 500; }
+    .bottom-cta { padding: 72px 40px; text-align: center; }
+    .cta-title { font-family: 'Cormorant Garamond', serif; font-size: 32px; color: var(--charcoal); margin-bottom: 12px; }
+    .cta-sub { font-size: 14px; color: var(--muted); margin-bottom: 32px; line-height: 1.7; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .btn-gold { display: inline-block; background: var(--gold); color: #fff; font-size: 13px; letter-spacing: 0.08em; padding: 14px 32px; }
     footer { background: var(--charcoal); padding: 48px 40px 32px; }
     .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; padding-bottom: 32px; border-bottom: 0.5px solid rgba(255,255,255,0.1); margin-bottom: 24px; }
     .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: #fff; }
     .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
     .footer-links a { font-size: 13px; color: var(--light-muted); }
     .footer-bottom { font-size: 12px; color: var(--light-muted); text-align: center; }
-
     @media (max-width: 768px) {
       nav { padding: 0 20px; }
       .nav-links { display: none; }
       .page-hero { padding: 100px 24px 48px; }
-      .properties-section { padding: 40px 24px; }
-      .properties-grid { grid-template-columns: 1fr; }
-      .widget-section { padding: 32px 20px; }
+      .widget-section { padding: 40px 20px 48px; }
+      .trust-strip { gap: 24px; padding: 24px; }
+      .why-direct { padding: 48px 24px; }
+      .benefits-grid { grid-template-columns: 1fr; }
+      .markets-section { padding: 48px 24px; }
+      .markets-inner { grid-template-columns: 1fr; }
+      .bottom-cta { padding: 48px 24px; }
     }
   </style>
 </head>
 <body>
-
   <nav>
     <a href="/" class="nav-logo">Hilltop Ventures</a>
     <div class="nav-links">
@@ -77,13 +85,13 @@
 
   <div class="page-hero">
     <p class="page-eyebrow">Washington, DC & Little Rock, AR</p>
-    <h1 class="page-title">Our Properties</h1>
-    <p class="page-sub">Every Hilltop property is personally managed, professionally cleaned, and ready for your stay. Book direct for the best rate.</p>
+    <h1 class="page-title">Find your perfect stay.</h1>
+    <p class="page-sub">Search availability across all 11 Hilltop properties and book direct for the best rate — no OTA fees, no middleman.</p>
   </div>
 
-  <!-- HOSTAWAY BOOKING WIDGET -->
   <div class="widget-section">
-    <p class="widget-title">Check Availability & Book Your Stay</p>
+    <p class="widget-title">Search & Book Direct</p>
+    <p class="widget-sub">Enter your dates to see available properties with real-time pricing</p>
     <script src="https://d2q3n06xhbi0am.cloudfront.net/widget.js?1640277196"></script>
     <script>
       window.searchBar({
@@ -98,132 +106,58 @@
     <div id="hostaway-booking-widget"></div>
   </div>
 
-  <!-- ALL PROPERTIES -->
-  <div class="properties-section">
-    <div class="properties-grid">
+  <div class="trust-strip">
+    <div class="trust-item"><div class="trust-num">11</div><div class="trust-label">Properties</div></div>
+    <div class="trust-item"><div class="trust-num">★ 4.9</div><div class="trust-label">Guest Rating</div></div>
+    <div class="trust-item"><div class="trust-num">DC + AR</div><div class="trust-label">Markets</div></div>
+    <div class="trust-item"><div class="trust-num">24/7</div><div class="trust-label">Support</div></div>
+  </div>
 
-      <div class="prop-card">
-        <div class="prop-img"><span class="prop-img-placeholder">Photo</span></div>
-        <div class="prop-info">
-          <div class="prop-name">Monumental Escape</div>
-          <div class="prop-loc">Washington, DC</div>
-          <div class="prop-desc">The ultimate DC experience for large groups. Free parking and EV charger. Steps from DC's most iconic landmarks.</div>
-          <div class="prop-meta">5 BR · 3 BA · Sleeps 11</div>
-          <a href="https://www.staywithhilltop.com/" class="prop-btn">BOOK NOW →</a>
-        </div>
+  <div class="why-direct">
+    <p class="section-eyebrow">Why Book Direct</p>
+    <h2 class="section-title">Better for you. Better for us.</h2>
+    <div class="benefits-grid">
+      <div class="benefit-item">
+        <div class="benefit-icon">💰</div>
+        <div class="benefit-title">Best rate guaranteed</div>
+        <div class="benefit-desc">No OTA service fees added to your booking. What you see is what you pay.</div>
       </div>
-
-      <div class="prop-card">
-        <div class="prop-img"><span class="prop-img-placeholder">Photo</span></div>
-        <div class="prop-info">
-          <div class="prop-name">Hilltop Hideaway</div>
-          <div class="prop-loc">Washington, DC</div>
-          <div class="prop-desc">A quiet 3-bedroom DC retreat perfect for families or small groups. Free secured parking included.</div>
-          <div class="prop-meta">3 BR · 2 BA · Sleeps 8</div>
-          <a href="https://www.staywithhilltop.com/" class="prop-btn">BOOK NOW →</a>
-        </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🤝</div>
+        <div class="benefit-title">Direct relationship</div>
+        <div class="benefit-desc">Communicate directly with our team — no middleman, faster responses, personal service.</div>
       </div>
-
-      <div class="prop-card">
-        <div class="prop-img"><span class="prop-img-placeholder">Photo</span></div>
-        <div class="prop-info">
-          <div class="prop-name">Phoenix's Place</div>
-          <div class="prop-loc">Capitol Hill, DC</div>
-          <div class="prop-desc">A Capitol Hill gem featuring a private speakeasy lounge and king bed. Steps from H Street and vibrant DC nightlife.</div>
-          <div class="prop-meta">3 BR · 2 BA · Sleeps 6</div>
-          <a href="https://www.staywithhilltop.com/" class="prop-btn">BOOK NOW →</a>
-        </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🏡</div>
+        <div class="benefit-title">Same great homes</div>
+        <div class="benefit-desc">Every property is the same one listed on Airbnb and Vrbo — professionally managed and guest-ready.</div>
       </div>
-
-      <div class="prop-card">
-        <div class="prop-img"><span class="prop-img-placeholder">Photo</span></div>
-        <div class="prop-info">
-          <div class="prop-name">Pewter Palace</div>
-          <div class="prop-loc">Washington, DC</div>
-          <div class="prop-desc">A modern 4-bedroom DC bungalow with 2 free parking spots. Spacious and stylish with room for the whole group.</div>
-          <div class="prop-meta">4 BR · 3 BA · Sleeps 10</div>
-          <a href="https://www.staywithhilltop.com/" class="prop-btn">BOOK NOW →</a>
-        </div>
-      </div>
-
-      <div class="prop-card">
-        <div class="prop-img"><span class="prop-img-placeholder">Photo</span></div>
-        <div class="prop-info">
-          <div class="prop-name">Emerald Escape</div>
-          <div class="prop-loc">Washington, DC</div>
-          <div class="prop-desc">Spacious 4-bedroom DC home with 2 parking spots. A luxurious base for groups of up to 8 exploring the capital.</div>
-          <div class="prop-meta">4 BR · 3 BA · Sleeps 8</div>
-          <a href="https://www.staywithhilltop.com/" class="prop-btn">BOOK NOW →</a>
-        </div>
-      </div>
-
-      <div class="prop-card">
-        <div class="prop-img"><span class="prop-img-placeholder">Photo</span></div>
-        <div class="prop-info">
-          <div class="prop-name">Ash Abode</div>
-          <div class="prop-loc">Washington, DC</div>
-          <div class="prop-desc">A group-friendly 3-bedroom DC stay with free secured parking. Comfortable, well-appointed, and centrally located.</div>
-          <div class="prop-meta">3 BR · 2 BA · Sleeps 8</div>
-          <a href="https://www.staywithhilltop.com/" class="prop-btn">BOOK NOW →</a>
-        </div>
-      </div>
-
-      <div class="prop-card">
-        <div class="prop-img"><span class="prop-img-placeholder">Photo</span></div>
-        <div class="prop-info">
-          <div class="prop-name">Orange Door Abode</div>
-          <div class="prop-loc">Washington, DC</div>
-          <div class="prop-desc">A charming 3-bedroom DC home with free parking. Warm and welcoming — perfect for families and groups.</div>
-          <div class="prop-meta">3 BR · 2 BA · Sleeps 8</div>
-          <a href="https://www.staywithhilltop.com/" class="prop-btn">BOOK NOW →</a>
-        </div>
-      </div>
-
-      <div class="prop-card">
-        <div class="prop-img"><span class="prop-img-placeholder">Photo</span></div>
-        <div class="prop-info">
-          <div class="prop-name">Federal Flat</div>
-          <div class="prop-loc">NoMa, DC</div>
-          <div class="prop-desc">A beautifully appointed 2-bedroom flat steps from Union Market, NoMa, and Capitol Hill. Walk to everything.</div>
-          <div class="prop-meta">2 BR · 1 BA · Sleeps 4</div>
-          <a href="https://www.staywithhilltop.com/" class="prop-btn">BOOK NOW →</a>
-        </div>
-      </div>
-
-      <div class="prop-card">
-        <div class="prop-img"><span class="prop-img-placeholder">Photo</span></div>
-        <div class="prop-info">
-          <div class="prop-name">Hi-Tech Condo</div>
-          <div class="prop-loc">Washington, DC</div>
-          <div class="prop-desc">Sleek and stylish 1-bedroom condo with free parking near Union Market. Perfect for couples or solo travelers.</div>
-          <div class="prop-meta">1 BR · 1 BA · Sleeps 2</div>
-          <a href="https://www.staywithhilltop.com/" class="prop-btn">BOOK NOW →</a>
-        </div>
-      </div>
-
-      <div class="prop-card">
-        <div class="prop-img"><span class="prop-img-placeholder">Photo</span></div>
-        <div class="prop-info">
-          <div class="prop-name">Stately Studio</div>
-          <div class="prop-loc">Washington, DC</div>
-          <div class="prop-desc">A private DC studio with free parking and in-unit washer/dryer. Ideal for solo travelers or couples visiting the capital.</div>
-          <div class="prop-meta">Studio · 1 BA · Sleeps 2</div>
-          <a href="https://www.staywithhilltop.com/" class="prop-btn">BOOK NOW →</a>
-        </div>
-      </div>
-
-      <div class="prop-card">
-        <div class="prop-img"><span class="prop-img-placeholder">Photo</span></div>
-        <div class="prop-info">
-          <div class="prop-name">Urbane Bronze Château</div>
-          <div class="prop-loc">Little Rock, AR</div>
-          <div class="prop-desc">A stylish 2-bedroom Little Rock stay with two king beds. Conveniently located near UAMS and Simmons Bank Arena.</div>
-          <div class="prop-meta">2 BR · 1 BA · Sleeps 4</div>
-          <a href="https://www.staywithhilltop.com/" class="prop-btn">BOOK NOW →</a>
-        </div>
-      </div>
-
     </div>
+  </div>
+
+  <div class="markets-section">
+    <p class="section-eyebrow" style="text-align:center; margin-bottom:8px;">Our Markets</p>
+    <h2 class="section-title">Where we operate.</h2>
+    <div class="markets-inner">
+      <div class="market-card">
+        <div class="market-city">Washington</div>
+        <div class="market-state">District of Columbia</div>
+        <div class="market-desc">From Capitol Hill rowhouses to modern condos near Union Market — our DC portfolio covers every type of traveler and group size.</div>
+        <div class="market-props">10 properties available</div>
+      </div>
+      <div class="market-card">
+        <div class="market-city">Little Rock</div>
+        <div class="market-state">Arkansas</div>
+        <div class="market-desc">Stylish stays near UAMS, Simmons Bank Arena, and downtown Little Rock — perfect for medical travelers, families, and weekend visitors.</div>
+        <div class="market-props">1 property available</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-cta">
+    <h2 class="cta-title">Own a property in DC or Arkansas?</h2>
+    <p class="cta-sub">We manage short-term rentals for homeowners who want professional results without the hassle.</p>
+    <a href="manage-with-us.html" class="btn-gold">LEARN ABOUT MANAGEMENT →</a>
   </div>
 
   <footer>
@@ -237,8 +171,7 @@
         <a href="contact.html">Contact</a>
       </div>
     </div>
-    <p class="footer-bottom">© 2026 Hilltop Ventures · Washington, DC & Little Rock, AR</p>
+    <p class="footer-bottom">© 2026 Hilltop Ventures · Washington, DC & Little Rock, AR · <a href="contact.html" style="color:var(--light-muted)">hello@staywithhilltop.com</a></p>
   </footer>
-
 </body>
 </html>
